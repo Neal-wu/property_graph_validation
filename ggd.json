@@ -1,0 +1,58 @@
+{
+	"sourceGP": [
+  {
+    "vertices": [
+      {
+        "label": "ProductAmazon",
+        "variable": "VS"
+      },
+      {
+        "label": "ManufacturerAmazon",
+        "variable": "lV"
+      }
+    ],
+    "edges": [
+      {
+        "label": "producedbyAmazon",
+        "variable": "WaO",
+        "fromVariable": "VS",
+        "toVariable": "lV"
+      }
+    ]
+  }
+],
+	"sourceCons": [],
+	"targetGP": [
+  {
+    "vertices": [
+      {
+        "label": "ProductAmazon",
+        "variable": "VS"
+      },
+      {
+        "label": "ManufacturerAmazon",
+        "variable": "lV"
+      },
+      {
+        "label": "ProductLocation",
+        "variable": "DX"
+      }
+    ],
+    "edges": [
+      {
+        "label": "producedbyAmazon",
+        "variable": "WaO",
+        "fromVariable": "VS",
+        "toVariable": "lV"
+      },
+      {
+        "label": "located_in",
+        "variable": "AxAh",
+        "fromVariable": "VS",
+        "toVariable": "DX"
+      }
+    ]
+  }
+],
+	"targetCons": []
+}
